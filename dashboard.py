@@ -39,8 +39,8 @@ def macem_season(day_df):
     return season_df
 
 # Membaca data
-days_df = pd.read_csv("https://raw.githubusercontent.com/putririgita14/dicoding/main/day.csv")
-hours_df = pd.read_csv("https://raw.githubusercontent.com/putririgita14/dicoding/main/hour.csv")
+days_df = pd.read_csv("https://raw.githubusercontent.com/putririgita14/bangkit/main/day.csv")
+hours_df = pd.read_csv("https://raw.githubusercontent.com/putririgita14/bangkit/main/hour.csv")
 
 days_df.rename(columns={'yr':'year','mnth':'month','weekday':'one_of_week', 'weathersit':'weather_situation', 'windspeed':'wind_speed','cnt':'count_cr','hum':'humidity'},inplace=True)
 hours_df.rename(columns={'yr':'year','hr':'hours','mnth':'month','weekday':'one_of_week', 'weathersit':'weather_situation','windspeed':'wind_speed','cnt':'count_cr','hum':'humidity'},inplace=True)
